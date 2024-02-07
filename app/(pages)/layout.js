@@ -23,7 +23,7 @@ export default function PagesLayout({ children }) {
           </div>
 
           <li class=" ml-6 border-l-2 py-4 pl-8 text-white lg:py-2">
-            <Link href="/individuals">Individuals</Link>
+            <Link href="/users">Individuals</Link>
           </li>
           <li class="mb-4 ml-6 border-l-2 py-4 pl-8  text-white lg:py-2">
             <Link href="/lawyers">Lawyers</Link>

@@ -23,7 +23,7 @@ ChartJS.register(
   Legend,
 );
 
-const BarChart = () => {
+const BarChart = ({ data, title }) => {
   const [chartData, setChartData] = useState({
     datasets: [],
   });
@@ -46,21 +46,7 @@ const BarChart = () => {
         "Nov",
         "Dec",
       ],
-      datasets: [
-        {
-          label: "Active users",
-          data: [450, 600, 750, 800, 700, 900, 600, 550, 800, 700, 950, 850],
-          borderColor: "rgb(53, 162, 235)",
-          backgroundColor: " #113672",
-        },
-        {
-          label: "New users",
-          data: [300, 400, 550, 600, 500, 700, 450, 400, 650, 550, 800, 700],
-
-          borderColor: "rgb(53, 162, 235)",
-          backgroundColor: "#4670B3",
-        },
-      ],
+      datasets: data,
     });
     setChartOptions({
       plugins: {
@@ -90,7 +76,7 @@ const BarChart = () => {
         others={["1 month", "2 weeks", "1 week"]}
       /> */}
       <h3 class="absolute left-4 top-6 text-xl font-semibold text-gray-800">
-        Overview
+        {title}
       </h3>
     </div>
   );

@@ -1,12 +1,19 @@
-export default function PreviewOfIndividuals() {
+import Link from "next/link";
+
+export default function PreviewOfIndividuals({ person }) {
   return (
     <div class="min-h-full  py-6">
       <div class="relative mt-6  w-full rounded-lg border bg-white p-4 shadow-md ">
         <div class="mb-4 flex items-center justify-between">
           <span class="text-xl font-semibold	text-gray-800">
-            Individual Users
+            {person === "users" ? "Individual Users" : "Lawyers"}
           </span>
-          <span class="text-sm font-medium text-[#184CA0]">View all</span>
+          <Link
+            href={`/${person == "users" ? "users/individualUsers" : "lawyers/individualLawyers"}`}
+            class="text-sm font-medium text-[#184CA0] underline"
+          >
+            View all
+          </Link>
         </div>
         <div class="grid  grid-cols-5 justify-between bg-gray-100  px-2 py-2 ">
           <span class="col-span-3 lg:col-span-1">

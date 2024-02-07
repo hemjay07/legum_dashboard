@@ -1,9 +1,9 @@
-export default function PopularLocations() {
+export default function QuestionsCategory() {
   return (
-    <div class="relative h-[380px] w-full overflow-y-auto rounded-lg border bg-white p-4 shadow-md ">
+    <div class="relative h-[380px]  w-full rounded-lg border bg-white p-4 shadow-md ">
       <div class="mb-4 flex items-center justify-between">
         <span class="text-xl font-semibold	text-gray-800">
-          Popular Locations
+          Questions Categories{" "}
         </span>
         <span class="text-sm font-medium text-[#184CA0]">View all</span>
       </div>
