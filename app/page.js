@@ -1,5 +1,5 @@
 import "./globals.css";
-
+import Input from "./components/input";
 export default function SignIn() {
   return (
     <div class=" h-screen flex-col   p-8 ">
@@ -18,34 +18,19 @@ export default function SignIn() {
           >
             Sign in
           </h3>
-          <div class="flex flex-col ">
-            <label
-              class="mb-1 text-sm font-medium		lg:text-gray-500"
-              for="username"
-            >
-              Username
-            </label>
-            <input
-              placeholder="Enter username"
-              class="mb-6 w-full rounded border-none p-3 text-base font-normal text-black placeholder-gray-500 ring-2 ring-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-500"
-              type="text"
-              id="username"
-            />
-          </div>
-          <div class="flex flex-col">
-            <label
-              class="mb-1 text-sm	font-medium	lg:text-gray-500"
-              for="password"
-            >
-              Password
-            </label>
-            <input
-              placeholder="Enter username"
-              class="mb-6 w-full rounded border-none p-3 text-base font-normal text-black placeholder-gray-500 ring-2 ring-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-500"
-              type="text"
-              id="password"
-            />
-          </div>
+
+          <Input
+            type="text"
+            placeholder={"Enter username"}
+            id="questions"
+            label={"Username"}
+          />
+          <Input
+            type="text"
+            placeholder={"Password"}
+            id="questions"
+            label={"Enter password"}
+          />
           <button class="w-full rounded-lg bg-primary-color p-3 font-normal text-white">
             Log in{" "}
           </button>

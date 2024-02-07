@@ -1,5 +1,6 @@
 "use client";
 import BackButton from "./backButton";
+import Input from "./input";
 
 export default function UserOrLawyersProfile({ person }) {
   return (
@@ -11,65 +12,78 @@ export default function UserOrLawyersProfile({ person }) {
         Personal details
       </h2>
       <div class=" mt-6 grid grid-cols-2">
-        <div class="flex flex-col ">
-          <label
-            class="mb-1 text-sm font-medium		lg:text-gray-500"
-            for="firstname"
-          >
-            First Name
-          </label>
-          <input
-            placeholder="Enter firstname"
-            class="mb-6 w-[270px] rounded border-none p-3 text-base font-normal text-black placeholder-gray-500 ring-2 ring-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-500"
+        <div class="w-[250px]">
+          <Input
             type="text"
-            id="username"
+            placeholder={"Enter first name"}
+            id="firstName"
+            width={250}
+            label={"First Name"}
           />
         </div>
 
-        <div class="flex flex-col ">
-          <label
-            class="mb-1 text-sm font-medium		lg:text-gray-500"
-            for="lastname"
-          >
-            Last Name
-          </label>
-          <input
-            placeholder="Enter lastname"
-            class="mb-6 w-[270px] rounded border-none p-3 text-base font-normal text-black placeholder-gray-500 ring-2 ring-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-500"
-            type="text"
-            id="username"
-          />
-        </div>
-        <div class="flex flex-col ">
-          <label
-            class="mb-1 text-sm font-medium		lg:text-gray-500"
-            for="emailAddress"
-          >
-            Email Address
-          </label>
-          <input
-            placeholder="Enter email"
-            class="mb-6 w-[270px] rounded border-none p-3 text-base font-normal text-black placeholder-gray-500 ring-2 ring-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-500"
-            type="text"
-            id="emailAddress"
-          />
-        </div>
-        <div class="flex flex-col ">
-          <label
-            class="mb-1 text-sm font-medium		lg:text-gray-500"
-            for="phoneNumber"
-          >
-            Phone number
-          </label>
-          <input
-            placeholder="Enter phone number"
-            class="mb-6 w-[270px] rounded border-none p-3 text-base font-normal text-black placeholder-gray-500 ring-2 ring-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-500"
-            type="text"
-            id="phoneNumber"
-          />
-        </div>
+        <Input
+          type="text"
+          placeholder={" Enter last name"}
+          id="lastName"
+          width={250}
+          label={"Last Name"}
+        />
+        <Input
+          type="text"
+          placeholder={" Enter email address"}
+          id="emailAddress"
+          width={250}
+          label={"Email Address"}
+        />
+        <Input
+          type="text"
+          placeholder={" Enter phone number"}
+          id="phoneNumber"
+          width={250}
+          label={"Phone Number"}
+        />
       </div>
-      <h2 class=" mt-6 text-xl font-semibold text-gray-800	">Activity</h2>
+      <h2 class=" mb-6 mt-16 text-xl font-semibold text-gray-800	">Activity</h2>
+      <div class="grid grid-cols-3">
+        <Input
+          type="text"
+          placeholder={"SCN0000000"}
+          id="questions"
+          width={160}
+          label={"Questions asked"}
+        />
+        <div class="w-[160px]">
+          <Input
+            type="text"
+            placeholder={"SCN0000000"}
+            id="upvotes"
+            width={160}
+            label={"Upvotes"}
+          />
+        </div>
+        <Input
+          type="text"
+          placeholder={"SCN0000000"}
+          id="downvotes"
+          width={160}
+          label={"Downvotes"}
+        />
+        <Input
+          type="text"
+          placeholder={"SCN0000000"}
+          id="appointmentsBooked"
+          width={160}
+          label={"Appointments booked"}
+        />
+        <Input
+          type="text"
+          placeholder={"SCN0000000"}
+          id="appointmentsCompleted"
+          width={160}
+          label={"Appointments completed"}
+        />
+      </div>
     </div>
   );
 }
