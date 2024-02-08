@@ -1,6 +1,6 @@
 export default function QuestionsCategory() {
   return (
-    <div class="relative h-[380px]  w-full rounded-lg border bg-white p-4 shadow-md ">
+    <div class="relative h-[380px]  w-full  overflow-y-auto rounded-lg border bg-white p-4 shadow-md ">
       <div class="mb-4 flex items-center justify-between">
         <span class="text-xl font-semibold	text-gray-800">
           Questions Categories{" "}
@@ -13,7 +13,7 @@ export default function QuestionsCategory() {
           <span>Location</span>
         </span>
 
-        <span>User count</span>
+        <span>Percentage (%)</span>
       </div>
       <div class="divide-y px-2">
         <div class="flex justify-between py-3 ">
@@ -22,7 +22,7 @@ export default function QuestionsCategory() {
             <span class="text-sm font-medium	text-gray-800	">Lagos</span>
           </span>
 
-          <span class=" text-sm	font-medium	 text-gray-500">4</span>
+          <span class=" text-sm	font-medium	 text-gray-500">38</span>
         </div>
         <div class="flex justify-between py-3 ">
           <span>
@@ -30,7 +30,7 @@ export default function QuestionsCategory() {
             <span class="text-sm font-medium	text-gray-800	">Abuja</span>
           </span>
 
-          <span class=" text-sm	font-medium	 text-gray-500">20</span>
+          <span class=" text-sm	font-medium	 text-gray-500">29</span>
         </div>
         <div class="flex justify-between py-3 ">
           <span>

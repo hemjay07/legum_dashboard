@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect, Fragment } from "react";
 import { Bar } from "react-chartjs-2";
-import { RiArrowDropDownLine, RiCalendarFill } from "react-icons/ri";
+import { RiCalendarFill } from "react-icons/ri";
 
 import {
   Chart as ChartJS,
@@ -12,7 +12,6 @@ import {
   Tooltip,
   Legend,
 } from "chart.js";
-import Dropdown from "./dropdown";
 
 ChartJS.register(
   CategoryScale,

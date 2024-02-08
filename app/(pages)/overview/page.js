@@ -17,25 +17,25 @@ export default function Individuals() {
     <div class="py-12">
       <div class=" grid w-full grid-cols-2 justify-evenly gap-4 lg:grid-cols-4">
         <TopCard
-          title={"Questions asked"}
+          title={"Total users"}
           value={"45,823"}
           icon={"/messageIcon.svg"}
           increase={"23%"}
         />
         <TopCard
-          title={"Questions asked"}
+          title={"Active users"}
           value={"45,823"}
           icon={"/messageIcon.svg"}
           increase={"23%"}
         />
         <TopCard
-          title={"Questions asked"}
+          title={"New users"}
           value={"45,823"}
           icon={"/messageIcon.svg"}
           increase={"23%"}
         />
         <TopCard
-          title={"Questions asked"}
+          title={"Active subscriptions"}
           value={"45,823"}
           icon={"/messageIcon.svg"}
           increase={"23%"}
