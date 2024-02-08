@@ -1,7 +1,9 @@
+"use client";
 import TopCard from "@/app/components/topcard";
 import BarChart from "@/app/components/bar";
 
 import BarredWords from "@/app/components/barredWords";
+import { Doughnut } from "react-chartjs-2";
 export default function SUbscriptions() {
   // data for the bar chart
 
@@ -55,7 +57,7 @@ export default function SUbscriptions() {
       </div>
       <div class="mt-6 grid grid-cols-1 gap-y-6 lg:grid-cols-3 lg:gap-6">
         <BarChart data={data} title={"Subscriptions"} class="lg:col-span-2" />
-        <BarredWords />
+        <Doughnut data={data} title="Paid subscriptions" />
       </div>
     </div>
   );
