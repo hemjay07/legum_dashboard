@@ -1,10 +1,11 @@
+"use client";
 import AccountDeletionRequest from "@/app/components/PreviewOfAccountDeletion";
-import Complaints from "@/app/components/PreviewOfComplaint";
+import BackButton from "@/app/components/backButton";
 
-export default function Reports() {
+export default function () {
   return (
-    <div>
-      <Complaints />
+    <div class="mt-6">
+      <BackButton />
       <AccountDeletionRequest />
     </div>
   );

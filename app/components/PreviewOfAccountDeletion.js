@@ -1,15 +1,9 @@
 "use client";
-
-import BackButton from "@/app/components/backButton";
-export default function Verification() {
+export default function AccountDeletionRequest() {
   return (
     <div class="min-h-full  py-6">
-      <BackButton />
       <h2 class="mb-10 mt-6 text-2xl font-semibold text-gray-800	">
-        Pending Lawyer Verifications
-        <span class="ml-4	  rounded-full bg-[#184CA0] px-4 py-2 text-sm font-extrabold text-white">
-          101
-        </span>
+        Account deletion requests{" "}
       </h2>
 
       <div class="relative mt-12 w-full  rounded-lg border bg-white p-4  shadow-md lg:mt-6 ">
@@ -20,7 +14,7 @@ export default function Verification() {
           </span>
           <span class=" hidden lg:block">Email Address</span>
           <span class=" hidden lg:block">Phone number</span>
-          <span class="">Account created</span>
+          <span class="">Submitted</span>
           <span class="">Verify status</span>
         </div>
         <div class="max-h-[45vh] divide-y overflow-y-auto pl-2 lg:max-h-[45vh]">
