@@ -2,24 +2,29 @@ import Link from "next/link";
 import "../globals.css";
 import { IoMdSearch, IoIosNotifications } from "react-icons/io";
 import { RiArrowDropDownLine } from "react-icons/ri";
+import Image from "next/image";
 
 export default function PagesLayout({ children }) {
   return (
     <div class="nav-list flex">
       <div class="max-w-1/6 min-h-screen w-60 bg-secondary-color px-2 py-8 text-sm font-normal	">
         <div class=" mb-12 flex gap-4 lg:mb-8">
-          <img src="/companyLogo.png" alt="Company Logo" class="w-6 bg-white" />
+          <Image
+            src="/companyLogo.png"
+            alt="Company Logo"
+            class="w-6 bg-white"
+          />
           <h1 class=" mr-8 whitespace-nowrap text-xl	font-medium text-white">
             Legum Limited
           </h1>
         </div>
         <ul class="flex flex-col   ">
           <li class="flex  gap-3 px-4 py-2  text-white">
-            <img src="/overview.svg"></img>
+            <Image src="/overview.svg"></Image>
             <Link href="/overview ">Overview</Link>
           </li>
           <div class="flex gap-3 px-4 py-4 text-white lg:py-2">
-            <img src="/users.svg"></img>Users
+            <Image src="/users.svg"></Image>Users
           </div>
 
           <li class=" ml-6 border-l-2 py-4 pl-8 text-white lg:py-2">
@@ -30,31 +35,31 @@ export default function PagesLayout({ children }) {
           </li>
 
           <li class=" flex gap-3 px-4 py-4 text-white lg:py-2">
-            <img src="/activity.svg"></img>{" "}
+            <Image src="/activity.svg"></Image>{" "}
             <Link href="/activity">Activity</Link>
           </li>
           <li class="flex gap-3 px-4 py-4 text-white lg:py-2">
-            <img src="/compliance.svg"></img>{" "}
+            <Image src="/compliance.svg"></Image>{" "}
             <Link href="/compliance">Compliance</Link>
           </li>
           <li class="flex gap-3 px-4 py-4 text-white lg:py-2">
-            <img src="/subscriptions.svg"></img>{" "}
+            <Image src="/subscriptions.svg"></Image>{" "}
             <Link href="/subscriptions">Subscriptions</Link>
           </li>
           <li class="flex gap-3 px-4 py-4 text-white lg:py-2">
-            <img src="/consultations.svg"></img>{" "}
+            <Image src="/consultations.svg"></Image>{" "}
             <Link href="/consultations">Consultations</Link>
           </li>
           <li class="flex gap-3 px-4 py-4 text-white lg:py-2">
-            <img src="/documentAi.svg"></img>{" "}
+            <Image src="/documentAi.svg"></Image>{" "}
             <Link href="/documentAI">Document AI</Link>
           </li>
           <li class="flex gap-3 px-4 py-4 text-white lg:py-2">
-            <img src="/financials.svg"></img>{" "}
+            <Image src="/financials.svg"></Image>{" "}
             <Link href="/financials">Financials</Link>
           </li>
           <li class="flex gap-3 px-4 py-4 text-white lg:py-2">
-            <img src="/security.svg"></img>{" "}
+            <Image src="/security.svg"></Image>{" "}
             <Link href="/security">Security</Link>
           </li>
         </ul>
@@ -63,17 +68,18 @@ export default function PagesLayout({ children }) {
         </div>
         <ul class=" flex flex-col ">
           <li class="flex gap-3 px-4 py-4 text-white lg:py-2">
-            <img src="/verification.svg"></img>{" "}
+            <Image src="/verification.svg"></Image>{" "}
             <Link href="/verification">Verification</Link>
           </li>
           <li class="flex gap-3 px-4 py-4 text-white lg:py-2">
-            <img src="/reports.svg"></img> <Link href="/reports">Reports</Link>
+            <Image src="/reports.svg"></Image>{" "}
+            <Link href="/reports">Reports</Link>
           </li>
           <li
             class="lg:py2 flex gap-3 px-4 py-4
                text-white"
           >
-            <img src="/payout.svg"></img> <Link href="/payout">Payout</Link>
+            <Image src="/payout.svg"></Image> <Link href="/payout">Payout</Link>
           </li>
         </ul>
       </div>

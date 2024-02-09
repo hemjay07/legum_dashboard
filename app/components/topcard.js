@@ -1,4 +1,5 @@
-import { FaMessage } from "react-icons/fa6";
+import Image from "next/image";
+
 export default function TopCard({ title, value, icon, increase }) {
   return (
     <div class="relative flex  items-start justify-between rounded-lg border   p-4 shadow-md">
@@ -8,7 +9,7 @@ export default function TopCard({ title, value, icon, increase }) {
         <div class="text-xs font-medium	text-gray-500">
           <div class="flex">
             <div class="rounded-lg bg-green-50">
-              <img class="inline" src="/arrowUp.svg" />
+              <Image class="inline" src="/arrowUp.svg" />
               <span class="mr-2  text-green-500"> {increase}</span>
             </div>
             <p class="inline"> Compared to last month</p>
@@ -16,7 +17,7 @@ export default function TopCard({ title, value, icon, increase }) {
         </div>
       </div>
 
-      <img class="absolute right-4 top-4" src={icon} />
+      <Image class="absolute right-4 top-4" src={icon} />
     </div>
   );
 }
