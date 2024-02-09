@@ -1,5 +1,5 @@
 import Complaints from "@/app/components/PreviewOfComplaint";
 
-export default function () {
+export default function ComplaintPage() {
   return <Complaints />;
 }
