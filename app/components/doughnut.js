@@ -1,36 +1,46 @@
-import React from "react";
-import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
+"use client";
+import React, { useState, useEffect } from "react";
 import { Doughnut } from "react-chartjs-2";
+
+import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
-export const data = {
-  labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
-  datasets: [
-    {
-      label: "# of Votes",
-      data: [12, 19, 3, 5, 2, 3],
-      backgroundColor: [
-        "rgba(255, 99, 132, 0.2)",
-        "rgba(54, 162, 235, 0.2)",
-        "rgba(255, 206, 86, 0.2)",
-        "rgba(75, 192, 192, 0.2)",
-        "rgba(153, 102, 255, 0.2)",
-        "rgba(255, 159, 64, 0.2)",
-      ],
-      borderColor: [
-        "rgba(255, 99, 132, 1)",
-        "rgba(54, 162, 235, 1)",
-        "rgba(255, 206, 86, 1)",
-        "rgba(75, 192, 192, 1)",
-        "rgba(153, 102, 255, 1)",
-        "rgba(255, 159, 64, 1)",
-      ],
-      borderWidth: 1,
-    },
-  ],
+const DoughnutChart = ({ data, labels, title }) => {
+  const [chartData, setChartData] = useState({
+    datasets: [],
+  });
+
+  const [chartOptions, setChartOptions] = useState({});
+
+  useEffect(() => {
+    setChartData({
+      labels: labels,
+      datasets: data,
+    });
+    setChartOptions({
+      plugins: {
+        legend: {
+          position: "bottom",
+        },
+        title: {
+          display: true,
+        },
+      },
+      maintainAspectRatio: false,
+      responsive: true,
+      cutout: "85%",
+    });
+  }, []);
+
+  return (
+    <div className="relative  h-[380px] w-full rounded-lg border bg-white p-4 pt-8 shadow-md md:col-span-2">
+      <Doughnut data={chartData} options={chartOptions} />{" "}
+      <h3 class="absolute left-4 top-6 text-xl font-semibold text-gray-800">
+        {title}
+      </h3>
+    </div>
+  );
 };
 
-export function App() {
-  return <Doughnut data={data} />;
-}
+export default DoughnutChart;
