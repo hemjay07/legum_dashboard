@@ -31,7 +31,7 @@ const DoughnutChart = ({ data, labels, title }) => {
       responsive: true,
       cutout: "85%",
     });
-  }, []);
+  }, [data, labels]);
 
   return (
     <div className="relative  h-[380px] w-full rounded-lg border bg-white p-4 pt-8 shadow-md md:col-span-2">

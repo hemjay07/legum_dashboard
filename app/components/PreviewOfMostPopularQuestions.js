@@ -26,9 +26,9 @@ export default function PreviewOfMostPopularQuestions({ person }) {
           <span class="w-[80%] overflow-hidden truncate">
             <span class="mr-4 text-sm	font-medium	 text-gray-500">1</span>
             <span class="	text-sm font-medium text-gray-800">
-              I made a painting for a gallery show, but they're claiming it's
-              too similar to one of their established artist's work. Can they
-              stop me from exhibiting it? Jagun
+              I made a painting for a gallery show, but they&apos;re claiming
+              it&apos;s too similar to one of their established artist&apos;s
+              work. Can they stop me from exhibiting it? Jagun
             </span>
           </span>
 

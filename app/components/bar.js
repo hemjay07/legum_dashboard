@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect, Fragment } from "react";
+import React, { useState, useEffect } from "react";
 import { Bar } from "react-chartjs-2";
 import { RiCalendarFill } from "react-icons/ri";
 
@@ -59,12 +59,7 @@ const BarChart = ({ data, title }) => {
       maintainAspectRatio: false,
       responsive: true,
     });
-  }, []);
-  const defaultOption = (
-    <div class="flex">
-      <RiCalendarFill class="mr-2 h-5 w-5 text-[#373737]" /> 1 year
-    </div>
-  );
+  }, [data]);
 
   return (
     <div className="relative  h-[380px] w-full rounded-lg border bg-white p-4 pt-8 shadow-md md:col-span-2">

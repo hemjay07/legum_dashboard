@@ -20,11 +20,11 @@ export default function PagesLayout({ children }) {
         </div>
         <ul class="flex flex-col   ">
           <li class="flex  gap-3 px-4 py-2  text-white">
-            <Image src="/overview.svg"></Image>
+            <Image alt="" src="/overview.svg"></Image>
             <Link href="/overview ">Overview</Link>
           </li>
           <div class="flex gap-3 px-4 py-4 text-white lg:py-2">
-            <Image src="/users.svg"></Image>Users
+            <Image alt="" src="/users.svg"></Image>Users
           </div>
 
           <li class=" ml-6 border-l-2 py-4 pl-8 text-white lg:py-2">
@@ -35,31 +35,31 @@ export default function PagesLayout({ children }) {
           </li>
 
           <li class=" flex gap-3 px-4 py-4 text-white lg:py-2">
-            <Image src="/activity.svg"></Image>{" "}
+            <Image alt="" src="/activity.svg"></Image>{" "}
             <Link href="/activity">Activity</Link>
           </li>
           <li class="flex gap-3 px-4 py-4 text-white lg:py-2">
-            <Image src="/compliance.svg"></Image>{" "}
+            <Image alt="" src="/compliance.svg"></Image>{" "}
             <Link href="/compliance">Compliance</Link>
           </li>
           <li class="flex gap-3 px-4 py-4 text-white lg:py-2">
-            <Image src="/subscriptions.svg"></Image>{" "}
+            <Image alt="" src="/subscriptions.svg"></Image>{" "}
             <Link href="/subscriptions">Subscriptions</Link>
           </li>
           <li class="flex gap-3 px-4 py-4 text-white lg:py-2">
-            <Image src="/consultations.svg"></Image>{" "}
+            <Image alt="" src="/consultations.svg"></Image>{" "}
             <Link href="/consultations">Consultations</Link>
           </li>
           <li class="flex gap-3 px-4 py-4 text-white lg:py-2">
-            <Image src="/documentAi.svg"></Image>{" "}
+            <Image alt="" src="/documentAi.svg"></Image>{" "}
             <Link href="/documentAI">Document AI</Link>
           </li>
           <li class="flex gap-3 px-4 py-4 text-white lg:py-2">
-            <Image src="/financials.svg"></Image>{" "}
+            <Image alt="" src="/financials.svg"></Image>{" "}
             <Link href="/financials">Financials</Link>
           </li>
           <li class="flex gap-3 px-4 py-4 text-white lg:py-2">
-            <Image src="/security.svg"></Image>{" "}
+            <Image alt="" src="/security.svg"></Image>{" "}
             <Link href="/security">Security</Link>
           </li>
         </ul>
@@ -68,18 +68,19 @@ export default function PagesLayout({ children }) {
         </div>
         <ul class=" flex flex-col ">
           <li class="flex gap-3 px-4 py-4 text-white lg:py-2">
-            <Image src="/verification.svg"></Image>{" "}
+            <Image alt="" src="/verification.svg"></Image>{" "}
             <Link href="/verification">Verification</Link>
           </li>
           <li class="flex gap-3 px-4 py-4 text-white lg:py-2">
-            <Image src="/reports.svg"></Image>{" "}
+            <Image alt="" src="/reports.svg"></Image>{" "}
             <Link href="/reports">Reports</Link>
           </li>
           <li
             class="lg:py2 flex gap-3 px-4 py-4
                text-white"
           >
-            <Image src="/payout.svg"></Image> <Link href="/payout">Payout</Link>
+            <Image alt="" src="/payout.svg"></Image>{" "}
+            <Link href="/payout">Payout</Link>
           </li>
         </ul>
       </div>

@@ -9,7 +9,7 @@ export default function TopCard({ title, value, icon, increase }) {
         <div class="text-xs font-medium	text-gray-500">
           <div class="flex">
             <div class="rounded-lg bg-green-50">
-              <Image class="inline" src="/arrowUp.svg" />
+              <Image alt="" class="inline" src="/arrowUp.svg" />
               <span class="mr-2  text-green-500"> {increase}</span>
             </div>
             <p class="inline"> Compared to last month</p>
@@ -17,7 +17,7 @@ export default function TopCard({ title, value, icon, increase }) {
         </div>
       </div>
 
-      <Image class="absolute right-4 top-4" src={icon} />
+      <Image alt="" class="absolute right-4 top-4" src={icon} />
     </div>
   );
 }
