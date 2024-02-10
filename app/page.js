@@ -1,8 +1,16 @@
+"use client";
 import "./globals.css";
 import Input from "./components/input";
 import Image from "next/image";
 import welcomePic from "../public/welcomeToLegum.jpg";
+import { useRouter } from "next/navigation";
 export default function SignIn() {
+  const router = useRouter();
+
+  const handleClick = () => {
+    // Navigate to the specific page
+    router.push("/overview");
+  };
   return (
     <div class=" h-screen flex-col   p-8 ">
       <div class="relative h-full justify-between lg:flex lg:flex-row">
@@ -33,8 +41,11 @@ export default function SignIn() {
             id="questions"
             label={"Enter password"}
           />
-          <button class="w-full rounded-lg bg-primary-color p-3 font-normal text-white">
-            Log in{" "}
+          <button
+            onClick={handleClick}
+            class="w-full rounded-lg bg-primary-color p-3 font-normal text-white"
+          >
+            Log in
           </button>
         </div>
       </div>
