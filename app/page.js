@@ -2,7 +2,7 @@
 import "./globals.css";
 import Input from "./components/input";
 import Image from "next/image";
-import welcomePic from "../public/welcomeToLegum.jpg";
+import welcomePic from "../public/welcomeToLegum.svg";
 import { useRouter } from "next/navigation";
 export default function SignIn() {
   const router = useRouter();

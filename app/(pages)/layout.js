@@ -2,7 +2,7 @@ import Link from "next/link";
 import "../globals.css";
 import { IoMdSearch, IoIosNotifications } from "react-icons/io";
 import { RiArrowDropDownLine } from "react-icons/ri";
-import companyLogo from "../../public/companyLogo.png";
+import companyLogo from "../../public/companyLogo.svg";
 import overviewPic from "../../public/overview.svg";
 import userPic from "../../public/users.svg";
 import activityPic from "../../public/activity.svg";
