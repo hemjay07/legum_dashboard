@@ -7,8 +7,9 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={inter.className}>
-      <SpeedInsights />
-      <body class="overflow-hidden">{children}</body>
+      <body class="overflow-hidden">
+        {children} <SpeedInsights />
+      </body>
     </html>
   );
 }
