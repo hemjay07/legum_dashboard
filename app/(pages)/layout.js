@@ -9,7 +9,7 @@ import activityPic from "../../public/activity.svg";
 import compliancePic from "../../public/compliance.svg";
 import subscriptionsPic from "../../public/subscriptions.svg";
 import consultationsPic from "../../public/consultations.svg";
-import documentAiPic from "../../public/documentAI.svg";
+import documentAiPic from "../../public/documentAi.svg";
 import financialsPic from "../../public/financials.svg";
 import securityPic from "../../public/security.svg";
 import verificationPic from "../../public/verification.svg";
