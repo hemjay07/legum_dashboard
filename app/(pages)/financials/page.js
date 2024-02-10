@@ -2,7 +2,7 @@
 import TopCard from "@/app/components/topcard";
 import BarChart from "@/app/components/bar";
 import DoughnutChart from "@/app/components/doughnut";
-
+import messageIcon from "@/public/messageIcon.svg";
 export default function Financials() {
   // data for the bar chart
 
@@ -34,49 +34,49 @@ export default function Financials() {
         <TopCard
           title={"Total revenue"}
           value={"45,823"}
-          icon={"/messageIcon.svg"}
+          icon={messageIcon}
           increase={"23%"}
         />{" "}
         <TopCard
           title={"Subscription revenue"}
           value={"45,823"}
-          icon={"/messageIcon.svg"}
+          icon={messageIcon}
           increase={"23%"}
         />{" "}
         <TopCard
           title={"Subscriptions"}
           value={"45,823"}
-          icon={"/messageIcon.svg"}
+          icon={messageIcon}
           increase={"23%"}
         />{" "}
         <TopCard
           title={"Payout amount"}
           value={"45,823"}
-          icon={"/messageIcon.svg"}
+          icon={messageIcon}
           increase={"23%"}
         />{" "}
         <TopCard
           title={"Payouts"}
           value={"45,823"}
-          icon={"/messageIcon.svg"}
+          icon={messageIcon}
           increase={"23%"}
         />{" "}
         <TopCard
           title={"Subscription revenue"}
           value={"45,823"}
-          icon={"/messageIcon.svg"}
+          icon={messageIcon}
           increase={"23%"}
         />{" "}
         <TopCard
           title={"Commission"}
           value={"45,823"}
-          icon={"/messageIcon.svg"}
+          icon={messageIcon}
           increase={"23%"}
         />
         <TopCard
           title={"VAT(7.5%)"}
           value={"45,823"}
-          icon={"/messageIcon.svg"}
+          icon={messageIcon}
           increase={"23%"}
         />
       </div>

@@ -1,6 +1,7 @@
 import PreviewOfMostPopularAnswers from "@/app/components/PreviewOfMostPopularAnswers";
 import PreviewOfMostPopularQuestions from "@/app/components/PreviewOfMostPopularQuestions";
 import QuestionsCategory from "@/app/components/quetionsCategories";
+import messageIcon from "@/public/messageIcon.svg";
 import TopCard from "@/app/components/topcard";
 export default function Home() {
   return (
@@ -9,43 +10,43 @@ export default function Home() {
         <TopCard
           title={"Total users"}
           value={"45,823"}
-          icon={"/messageIcon.svg"}
+          icon={messageIcon}
           increase={"23%"}
         />{" "}
         <TopCard
           title={"Total users"}
           value={"45,823"}
-          icon={"/messageIcon.svg"}
+          icon={messageIcon}
           increase={"23%"}
         />
         <TopCard
           title={"Total users"}
           value={"45,823"}
-          icon={"/messageIcon.svg"}
+          icon={messageIcon}
           increase={"23%"}
         />
         <TopCard
           title={"Total users"}
           value={"45,823"}
-          icon={"/messageIcon.svg"}
+          icon={messageIcon}
           increase={"23%"}
         />
         <TopCard
           title={"Active users"}
           value={"45,823"}
-          icon={"/messageIcon.svg"}
+          icon={messageIcon}
           increase={"23%"}
         />
         <TopCard
           title={"New users"}
           value={"45,823"}
-          icon={"/messageIcon.svg"}
+          icon={messageIcon}
           increase={"23%"}
         />
         <TopCard
           title={"Active subscriptions"}
           value={"45,823"}
-          icon={"/messageIcon.svg"}
+          icon={messageIcon}
           increase={"23%"}
         />
       </div>

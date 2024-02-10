@@ -2,6 +2,20 @@ import Link from "next/link";
 import "../globals.css";
 import { IoMdSearch, IoIosNotifications } from "react-icons/io";
 import { RiArrowDropDownLine } from "react-icons/ri";
+import companyLogo from "../../public/companyLogo.png";
+import overviewPic from "../../public/overview.svg";
+import userPic from "../../public/users.svg";
+import activityPic from "../../public/activity.svg";
+import compliancePic from "../../public/compliance.svg";
+import subscriptionsPic from "../../public/subscriptions.svg";
+import consultationsPic from "../../public/consultations.svg";
+import documentAiPic from "../../public/documentAI.svg";
+import financialsPic from "../../public/financials.svg";
+import securityPic from "../../public/security.svg";
+import verificationPic from "../../public/verification.svg";
+import reportsPic from "../../public/reports.svg";
+import payoutPic from "../../public/payout.svg";
+
 import Image from "next/image";
 
 export default function PagesLayout({ children }) {
@@ -9,22 +23,18 @@ export default function PagesLayout({ children }) {
     <div class="nav-list flex">
       <div class="max-w-1/6 min-h-screen w-60 bg-secondary-color px-2 py-8 text-sm font-normal	">
         <div class=" mb-12 flex gap-4 lg:mb-8">
-          <Image
-            src="/companyLogo.png"
-            alt="Company Logo"
-            class="w-6 bg-white"
-          />
+          <Image src={companyLogo} alt="Company Logo" class="w-6 bg-white" />
           <h1 class=" mr-8 whitespace-nowrap text-xl	font-medium text-white">
             Legum Limited
           </h1>
         </div>
         <ul class="flex flex-col   ">
           <li class="flex  gap-3 px-4 py-2  text-white">
-            <Image alt="" src="/overview.svg"></Image>
+            <Image alt="" src={overviewPic}></Image>
             <Link href="/overview ">Overview</Link>
           </li>
           <div class="flex gap-3 px-4 py-4 text-white lg:py-2">
-            <Image alt="" src="/users.svg"></Image>Users
+            <Image alt="" src={userPic}></Image>Users
           </div>
 
           <li class=" ml-6 border-l-2 py-4 pl-8 text-white lg:py-2">
@@ -35,31 +45,31 @@ export default function PagesLayout({ children }) {
           </li>
 
           <li class=" flex gap-3 px-4 py-4 text-white lg:py-2">
-            <Image alt="" src="/activity.svg"></Image>{" "}
+            <Image alt="" src={activityPic}></Image>{" "}
             <Link href="/activity">Activity</Link>
           </li>
           <li class="flex gap-3 px-4 py-4 text-white lg:py-2">
-            <Image alt="" src="/compliance.svg"></Image>{" "}
+            <Image alt="" src={compliancePic}></Image>{" "}
             <Link href="/compliance">Compliance</Link>
           </li>
           <li class="flex gap-3 px-4 py-4 text-white lg:py-2">
-            <Image alt="" src="/subscriptions.svg"></Image>{" "}
+            <Image alt="" src={subscriptionsPic}></Image>{" "}
             <Link href="/subscriptions">Subscriptions</Link>
           </li>
           <li class="flex gap-3 px-4 py-4 text-white lg:py-2">
-            <Image alt="" src="/consultations.svg"></Image>{" "}
+            <Image alt="" src={consultationsPic}></Image>{" "}
             <Link href="/consultations">Consultations</Link>
           </li>
           <li class="flex gap-3 px-4 py-4 text-white lg:py-2">
-            <Image alt="" src="/documentAi.svg"></Image>{" "}
+            <Image alt="" src={documentAiPic}></Image>{" "}
             <Link href="/documentAI">Document AI</Link>
           </li>
           <li class="flex gap-3 px-4 py-4 text-white lg:py-2">
-            <Image alt="" src="/financials.svg"></Image>{" "}
+            <Image alt="" src={financialsPic}></Image>{" "}
             <Link href="/financials">Financials</Link>
           </li>
           <li class="flex gap-3 px-4 py-4 text-white lg:py-2">
-            <Image alt="" src="/security.svg"></Image>{" "}
+            <Image alt="" src={securityPic}></Image>{" "}
             <Link href="/security">Security</Link>
           </li>
         </ul>
@@ -68,18 +78,18 @@ export default function PagesLayout({ children }) {
         </div>
         <ul class=" flex flex-col ">
           <li class="flex gap-3 px-4 py-4 text-white lg:py-2">
-            <Image alt="" src="/verification.svg"></Image>{" "}
+            <Image alt="" src={verificationPic}></Image>{" "}
             <Link href="/verification">Verification</Link>
           </li>
           <li class="flex gap-3 px-4 py-4 text-white lg:py-2">
-            <Image alt="" src="/reports.svg"></Image>{" "}
+            <Image alt="" src={reportsPic}></Image>{" "}
             <Link href="/reports">Reports</Link>
           </li>
           <li
             class="lg:py2 flex gap-3 px-4 py-4
                text-white"
           >
-            <Image alt="" src="/payout.svg"></Image>{" "}
+            <Image alt="" src={payoutPic}></Image>{" "}
             <Link href="/payout">Payout</Link>
           </li>
         </ul>

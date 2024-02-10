@@ -1,6 +1,7 @@
 import TopCard from "@/app/components/topcard";
 import BarChart from "@/app/components/bar";
 import PopularLocations from "@/app/components/popularLocations";
+import messageIcon from "@/public/messageIcon.svg";
 import PreviewOfIndividuals from "@/app/components/PreviewOfUsersOrLawyers";
 export default function Individuals() {
   // data for bar chart
@@ -24,25 +25,25 @@ export default function Individuals() {
         <TopCard
           title={"Total individual users"}
           value={"45,823"}
-          icon={"/messageIcon.svg"}
+          icon={messageIcon}
           increase={"23%"}
         />
         <TopCard
           title={"Active individual users"}
           value={"45,823"}
-          icon={"/messageIcon.svg"}
+          icon={messageIcon}
           increase={"23%"}
         />
         <TopCard
           title={"New users"}
           value={"45,823"}
-          icon={"/messageIcon.svg"}
+          icon={messageIcon}
           increase={"23%"}
         />
         <TopCard
           title={"Total spent"}
           value={"₦45,823"}
-          icon={"/messageIcon.svg"}
+          icon={messageIcon}
           increase={"23%"}
         />
       </div>

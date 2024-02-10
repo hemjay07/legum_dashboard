@@ -2,6 +2,7 @@
 import TopCard from "@/app/components/topcard";
 import BarChart from "@/app/components/bar";
 import DoughnutChart from "@/app/components/doughnut";
+import messageIcon from "@/public/messageIcon.svg";
 
 export default function Subscriptions() {
   // data for the bar chart
@@ -34,31 +35,31 @@ export default function Subscriptions() {
         <TopCard
           title={"Paid subscriptions"}
           value={"45,823"}
-          icon={"/messageIcon.svg"}
+          icon={messageIcon}
           increase={"23%"}
         />{" "}
         <TopCard
           title={"Prime subscriptions"}
           value={"45,823"}
-          icon={"/messageIcon.svg"}
+          icon={messageIcon}
           increase={"23%"}
         />{" "}
         <TopCard
           title={"Pro subscriptions"}
           value={"45,823"}
-          icon={"/messageIcon.svg"}
+          icon={messageIcon}
           increase={"23%"}
         />{" "}
         <TopCard
           title={"Cancelled subsriptions"}
           value={"45,823"}
-          icon={"/messageIcon.svg"}
+          icon={messageIcon}
           increase={"23%"}
         />
         <TopCard
           title={"Doc AI subscriptions"}
           value={"45,823"}
-          icon={"/messageIcon.svg"}
+          icon={messageIcon}
           increase={"23%"}
         />
       </div>

@@ -1,6 +1,6 @@
 import TopCard from "@/app/components/topcard";
 import BarChart from "@/app/components/bar";
-
+import messageIcon from "@/public/messageIcon.svg";
 import BarredWords from "@/app/components/barredWords";
 export default function Compliance() {
   // data for the bar chart
@@ -25,43 +25,43 @@ export default function Compliance() {
         <TopCard
           title={"Flagged posts"}
           value={"45,823"}
-          icon={"/messageIcon.svg"}
+          icon={messageIcon}
           increase={"23%"}
         />{" "}
         <TopCard
           title={"Suspended accouts"}
           value={"45,823"}
-          icon={"/messageIcon.svg"}
+          icon={messageIcon}
           increase={"23%"}
         />{" "}
         <TopCard
           title={"Complaints logged"}
           value={"45,823"}
-          icon={"/messageIcon.svg"}
+          icon={messageIcon}
           increase={"23%"}
         />{" "}
         <TopCard
           title={"Resolved complaints"}
           value={"45,823"}
-          icon={"/messageIcon.svg"}
+          icon={messageIcon}
           increase={"23%"}
         />
         <TopCard
           title={"Account deletion requests"}
           value={"45,823"}
-          icon={"/messageIcon.svg"}
+          icon={messageIcon}
           increase={"23%"}
         />
         <TopCard
           title={"User data requests"}
           value={"45,823"}
-          icon={"/messageIcon.svg"}
+          icon={messageIcon}
           increase={"23%"}
         />
         <TopCard
           title={"Barred words"}
           value={"45,823"}
-          icon={"/messageIcon.svg"}
+          icon={messageIcon}
           increase={"23%"}
         />
       </div>

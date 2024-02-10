@@ -1,4 +1,5 @@
 import Image from "next/image";
+import arrowUpPic from "../../public/arrowUp.svg";
 
 export default function TopCard({ title, value, icon, increase }) {
   return (
@@ -9,7 +10,7 @@ export default function TopCard({ title, value, icon, increase }) {
         <div class="text-xs font-medium	text-gray-500">
           <div class="flex">
             <div class="rounded-lg bg-green-50">
-              <Image alt="" class="inline" src="/arrowUp.svg" />
+              <Image alt="" class="inline" src={arrowUpPic} />
               <span class="mr-2  text-green-500"> {increase}</span>
             </div>
             <p class="inline"> Compared to last month</p>

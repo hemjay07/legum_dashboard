@@ -2,7 +2,7 @@
 import TopCard from "@/app/components/topcard";
 import BarChart from "@/app/components/bar";
 import DoughnutChart from "@/app/components/doughnut";
-
+import messageIcon from "@/public/messageIcon.svg";
 export default function Financials() {
   // data for the bar chart
 
@@ -34,43 +34,43 @@ export default function Financials() {
         <TopCard
           title={"Login attempts"}
           value={"45,823"}
-          icon={"/messageIcon.svg"}
+          icon={messageIcon}
           increase={"23%"}
         />{" "}
         <TopCard
           title={"Successful logins"}
           value={"45,823"}
-          icon={"/messageIcon.svg"}
+          icon={messageIcon}
           increase={"23%"}
         />{" "}
         <TopCard
           title={"Failed logins"}
           value={"45,823"}
-          icon={"/messageIcon.svg"}
+          icon={messageIcon}
           increase={"23%"}
         />{" "}
         <TopCard
           title={"Suspicious logins"}
           value={"45,823"}
-          icon={"/messageIcon.svg"}
+          icon={messageIcon}
           increase={"23%"}
         />{" "}
         <TopCard
           title={"Account verification"}
           value={"45,823"}
-          icon={"/messageIcon.svg"}
+          icon={messageIcon}
           increase={"23%"}
         />{" "}
         <TopCard
           title={"Suspicious activities x"}
           value={"45,823"}
-          icon={"/messageIcon.svg"}
+          icon={messageIcon}
           increase={"23%"}
         />{" "}
         <TopCard
           title={"Password reset rate"}
           value={"45,823"}
-          icon={"/messageIcon.svg"}
+          icon={messageIcon}
           increase={"23%"}
         />
       </div>

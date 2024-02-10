@@ -3,6 +3,7 @@ import BarChart from "@/app/components/bar";
 import PopularLocations from "@/app/components/popularLocations";
 import PreviewOfPendingVerifications from "@/app/components/PreviewOfPendingVerifications";
 import QuestionsCategory from "@/app/components/quetionsCategories";
+import messageIcon from "@/public/messageIcon.svg";
 export default function Individuals() {
   // data for the bar chart
   const data = [
@@ -19,25 +20,25 @@ export default function Individuals() {
         <TopCard
           title={"Total users"}
           value={"45,823"}
-          icon={"/messageIcon.svg"}
+          icon={messageIcon}
           increase={"23%"}
         />
         <TopCard
           title={"Active users"}
           value={"45,823"}
-          icon={"/messageIcon.svg"}
+          icon={messageIcon}
           increase={"23%"}
         />
         <TopCard
           title={"New users"}
           value={"45,823"}
-          icon={"/messageIcon.svg"}
+          icon={messageIcon}
           increase={"23%"}
         />
         <TopCard
           title={"Active subscriptions"}
           value={"45,823"}
-          icon={"/messageIcon.svg"}
+          icon={messageIcon}
           increase={"23%"}
         />
       </div>
