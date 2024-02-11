@@ -1,6 +1,7 @@
 "use client";
 
 import BackButton from "@/app/components/backButton";
+import Link from "next/link";
 export default function Complaints() {
   return (
     <div class="min-h-full  py-6">
@@ -38,9 +39,12 @@ export default function Complaints() {
             <button class="w-[80px] rounded-3xl bg-[#FBE2B7] py-2 text-sm text-[#AD6F07] ">
               Pending
             </button>
-            <button class="w-[66px] bg-[#101928] py-3 text-sm text-white">
+            <Link
+              href="/reports/complaints/viewComplaint"
+              class="w-[66px] bg-[#101928] py-3 text-center text-sm text-white"
+            >
               Veiw
-            </button>
+            </Link>
           </div>
         </div>
       </div>

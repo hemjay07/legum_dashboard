@@ -1,4 +1,7 @@
 "use client";
+
+import Link from "next/link";
+
 export default function AccountDeletionRequest() {
   return (
     <div class="min-h-full  py-6">
@@ -35,9 +38,12 @@ export default function AccountDeletionRequest() {
             <span class="  text-sm	font-medium	 text-gray-500">
               15 May 2020 9:30 am
             </span>
-            <button class="w-[117px] bg-[#101928] py-3 text-sm text-white">
+            <Link
+              href="/reports/accountDeletion/deleteAccount"
+              class="w-[117px] bg-[#101928] py-3 text-center text-sm text-white"
+            >
               Verify status
-            </button>
+            </Link>
           </div>
         </div>
       </div>

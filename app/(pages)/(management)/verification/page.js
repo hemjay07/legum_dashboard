@@ -1,6 +1,7 @@
 "use client";
 
 import BackButton from "@/app/components/backButton";
+import Link from "next/link";
 export default function Verification() {
   return (
     <div class="min-h-full  py-6">
@@ -44,6 +45,7 @@ export default function Verification() {
             <button class="w-[117px] bg-[#101928] py-3 text-sm text-white">
               Verify status
             </button>
+            <Link href="./verification/verify">link</Link>
           </div>
         </div>
       </div>

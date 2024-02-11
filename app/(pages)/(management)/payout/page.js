@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Payout() {
   return (
     <div class="min-h-full  py-6">
@@ -34,9 +36,12 @@ export default function Payout() {
             <button class="w-[85px] rounded-3xl bg-[#B5E3C4] px-1 py-2 text-sm text-[#04802E]">
               Successful
             </button>
-            <button class="w-[72px] bg-[#101928] py-3 text-sm text-white">
+            <Link
+              href="/payout/confirmPayout"
+              class="w-[72px] bg-[#101928]  py-3 text-center text-sm text-white"
+            >
               Payout
-            </button>
+            </Link>
           </div>
         </div>
       </div>

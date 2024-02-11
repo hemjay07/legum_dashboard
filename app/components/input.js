@@ -3,10 +3,10 @@ export default function Input({ label, placeholder, type, id, width }) {
   // if there is no`width` prop, the default value is `w-full`
 
   width = width ? `w-[${width}px]` : "w-full";
-
+  placeholder = placeholder ? placeholder : "";
   return (
     <div class="flex flex-col ">
-      <label class="mb-1 text-sm font-normal text-gray-500" for={id}>
+      <label class="mb-1 text-sm font-normal text-gray-500" htmlFor={id}>
         {label}
       </label>
       <input

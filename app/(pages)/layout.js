@@ -23,7 +23,11 @@ export default function PagesLayout({ children }) {
     <div class="nav-list flex">
       <div class="max-w-1/6 min-h-screen w-60 bg-secondary-color px-2 py-8 text-sm font-normal	">
         <div class=" mb-12 flex gap-4 lg:mb-8">
-          <Image src={companyLogo} alt="Company Logo" class="w-6 bg-white" />
+          <Image
+            src={companyLogo}
+            alt="Company Logo"
+            class="h-auto w-6 bg-white"
+          />
           <h1 class=" mr-8 whitespace-nowrap text-xl	font-medium text-white">
             Legum Limited
           </h1>
