@@ -227,15 +227,15 @@ export default function UserOrLawyersProfile({ person }) {
               <span class="">
                 <span class="mr-4 text-sm	font-medium	 text-gray-500">1</span>
                 <span class="text-sm font-medium	text-gray-800	">
-                  Omobolarinwa Jagun{" "}
+                  Omobolarinwa Jagun
                 </span>
               </span>
 
               <span class="text-left text-sm	font-medium	 text-gray-500">
-                15 May 2020 9:30 am{" "}
+                15 May 2020 9:30 am
               </span>
               <span class=" text-left	text-sm font-medium	 text-gray-500">
-                40,000{" "}
+                40,000
               </span>
             </div>
           </div>
