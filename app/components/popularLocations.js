@@ -1,4 +1,4 @@
-export default function PopularLocations() {
+export default function PopularLocations({ locationStat }) {
   return (
     <div class="relative h-[380px] w-full overflow-y-auto rounded-lg border bg-white p-4 shadow-md ">
       <div class="mb-4 flex items-center justify-between">
@@ -16,54 +16,24 @@ export default function PopularLocations() {
         <span>User count</span>
       </div>
       <div class="divide-y px-2">
-        <div class="flex justify-between py-3 ">
-          <span>
-            <span class="mr-4 text-sm	font-medium	 text-gray-500">1</span>
-            <span class="text-sm font-medium	text-gray-800	">Lagos</span>
-          </span>
+        {locationStat.map((location, index) => {
+          return (
+            <div class="flex justify-between py-3 ">
+              <span>
+                <span class="mr-4 text-sm	font-medium	 text-gray-500">
+                  {index + 1}
+                </span>
+                <span class="text-sm font-medium	text-gray-800	">
+                  {location._id?.state}, {location._id?.country}
+                </span>
+              </span>
 
-          <span class=" text-sm	font-medium	 text-gray-500">4</span>
-        </div>
-        <div class="flex justify-between py-3 ">
-          <span>
-            <span class="mr-4 text-sm	font-medium	 text-gray-500">2</span>
-            <span class="text-sm font-medium	text-gray-800	">Abuja</span>
-          </span>
-
-          <span class=" text-sm	font-medium	 text-gray-500">20</span>
-        </div>
-        <div class="flex justify-between py-3 ">
-          <span>
-            <span class="mr-4 text-sm	font-medium	 text-gray-500">3</span>
-            <span class="text-sm font-medium	text-gray-800	">Lagos</span>
-          </span>
-
-          <span class="text-sm	font-medium	 text-gray-500">16</span>
-        </div>{" "}
-        <div class="flex justify-between py-3 ">
-          <span>
-            <span class="mr-4 text-sm	font-medium	 text-gray-500">4</span>
-            <span class="text-sm font-medium	text-gray-800	">Lagos</span>
-          </span>
-
-          <span class="text-sm	font-medium	 text-gray-500">16</span>
-        </div>{" "}
-        <div class="flex justify-between py-3 ">
-          <span>
-            <span class="mr-4 text-sm	font-medium	 text-gray-500">5</span>
-            <span class="text-sm font-medium	text-gray-800	">Lagos</span>
-          </span>
-
-          <span class="text-sm	font-medium	 text-gray-500">16</span>
-        </div>{" "}
-        <div class="flex justify-between py-3 ">
-          <span>
-            <span class="mr-4 text-sm	font-medium	 text-gray-500">6</span>
-            <span class="text-sm font-medium	text-gray-800	">Lagos</span>
-          </span>
-
-          <span class="text-sm	font-medium	 text-gray-500">16</span>
-        </div>
+              <span class=" text-sm	font-medium	 text-gray-500">
+                {location.count}
+              </span>
+            </div>
+          );
+        })}
       </div>
     </div>
   );

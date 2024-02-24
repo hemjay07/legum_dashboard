@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function PreviewOfIndividuals({ person }) {
+export default function PreviewOfIndividuals({ person, userAppointment }) {
   return (
     <div class="min-h-full  py-6">
       <div class="relative mt-6  w-full rounded-lg border bg-white p-4 shadow-md ">
@@ -29,214 +29,42 @@ export default function PreviewOfIndividuals({ person }) {
           </span>
         </div>
         <div class="divide-y px-2">
-          <div class="grid grid-cols-5 items-end justify-between py-4 lg:grid-cols-5 ">
-            <span class="col-span-3 lg:col-span-1">
-              <span class="mr-4 text-sm	font-medium	 text-gray-500">1</span>
-              <span class="text-sm font-medium	text-gray-800	">
-                Omobolarinwa Jagun
-              </span>
-            </span>
+          {userAppointment.map((user, index) => {
+            return (
+              <div
+                key={user._id}
+                class="grid grid-cols-5 items-end justify-between py-4 lg:grid-cols-5 "
+              >
+                <span class="col-span-3 lg:col-span-1">
+                  <span class="mr-4 text-sm	font-medium	 text-gray-500">
+                    {index + 1}
+                  </span>
+                  <span class="text-sm font-medium	text-gray-800	">
+                    {user.first_name} {user.last_name}
+                  </span>
+                </span>
 
-            <span class=" hidden	text-sm	font-medium text-gray-500 lg:block">
-              omobolarinwa@legum.tech
-            </span>
-            <span class="hidden text-sm font-medium	text-gray-500	 lg:block">
-              (+234) 817 582 5515
-            </span>
-            <span class=" hidden	text-sm	font-medium text-gray-500 lg:block">
-              Surulere, Lagos, Nigeria
-            </span>
-            <span class="col-span-2 flex justify-around lg:col-span-1">
-              <span class=" text-left text-sm	font-medium	 text-gray-500">
-                355
-              </span>
-              <span class=" text-left	text-sm font-medium	 text-gray-500">
-                055
-              </span>
-            </span>
-          </div>
-          <div class="grid grid-cols-5 items-end justify-between py-4 lg:grid-cols-5 ">
-            <span class="col-span-3 lg:col-span-1">
-              <span class="mr-4 text-sm	font-medium	 text-gray-500">2</span>
-              <span class="text-sm font-medium	text-gray-800	">
-                Omobolarinwa Jagun
-              </span>
-            </span>
-
-            <span class=" hidden	text-sm	font-medium text-gray-500 lg:block">
-              omobolarinwa@legum.tech
-            </span>
-            <span class="hidden text-sm font-medium	text-gray-500	 lg:block">
-              (+234) 817 582 5515
-            </span>
-            <span class=" hidden	text-sm	font-medium text-gray-500 lg:block">
-              Surulere, Lagos, Nigeria
-            </span>
-            <span class="col-span-2 flex justify-around lg:col-span-1">
-              <span class=" text-left text-sm	font-medium	 text-gray-500">
-                355
-              </span>
-              <span class=" text-left	text-sm font-medium	 text-gray-500">
-                055
-              </span>
-            </span>
-          </div>
-          <div class="grid grid-cols-5 items-end justify-between py-4 lg:grid-cols-5 ">
-            <span class="col-span-3 lg:col-span-1">
-              <span class="mr-4 text-sm	font-medium	 text-gray-500">3</span>
-              <span class="text-sm font-medium	text-gray-800	">
-                Omobolarinwa Jagun
-              </span>
-            </span>
-
-            <span class=" hidden	text-sm	font-medium text-gray-500 lg:block">
-              omobolarinwa@legum.tech
-            </span>
-            <span class="hidden text-sm font-medium	text-gray-500	 lg:block">
-              (+234) 817 582 5515
-            </span>
-            <span class=" hidden	text-sm	font-medium text-gray-500 lg:block">
-              Surulere, Lagos, Nigeria
-            </span>
-            <span class="col-span-2 flex justify-around lg:col-span-1">
-              <span class=" text-left text-sm	font-medium	 text-gray-500">
-                355
-              </span>
-              <span class=" text-left	text-sm font-medium	 text-gray-500">
-                055
-              </span>
-            </span>
-          </div>
-          <div class="grid grid-cols-5 items-end justify-between py-4 lg:grid-cols-5 ">
-            <span class="col-span-3 lg:col-span-1">
-              <span class="mr-4 text-sm	font-medium	 text-gray-500">4</span>
-              <span class="text-sm font-medium	text-gray-800	">
-                Omobolarinwa Jagun
-              </span>
-            </span>
-
-            <span class=" hidden	text-sm	font-medium text-gray-500 lg:block">
-              omobolarinwa@legum.tech
-            </span>
-            <span class="hidden text-sm font-medium	text-gray-500	 lg:block">
-              (+234) 817 582 5515
-            </span>
-            <span class=" hidden	text-sm	font-medium text-gray-500 lg:block">
-              Surulere, Lagos, Nigeria
-            </span>
-            <span class="col-span-2 flex justify-around lg:col-span-1">
-              <span class=" text-left text-sm	font-medium	 text-gray-500">
-                355
-              </span>
-              <span class=" text-left	text-sm font-medium	 text-gray-500">
-                055
-              </span>
-            </span>
-          </div>
-          <div class="grid grid-cols-5 items-end justify-between py-4 lg:grid-cols-5 ">
-            <span class="col-span-3 lg:col-span-1">
-              <span class="mr-4 text-sm	font-medium	 text-gray-500">5</span>
-              <span class="text-sm font-medium	text-gray-800	">
-                Omobolarinwa Jagun
-              </span>
-            </span>
-
-            <span class=" hidden	text-sm	font-medium text-gray-500 lg:block">
-              omobolarinwa@legum.tech
-            </span>
-            <span class="hidden text-sm font-medium	text-gray-500	 lg:block">
-              (+234) 817 582 5515
-            </span>
-            <span class=" hidden	text-sm	font-medium text-gray-500 lg:block">
-              Surulere, Lagos, Nigeria
-            </span>
-            <span class="col-span-2 flex justify-around lg:col-span-1">
-              <span class=" text-left text-sm	font-medium	 text-gray-500">
-                355
-              </span>
-              <span class=" text-left	text-sm font-medium	 text-gray-500">
-                055
-              </span>
-            </span>
-          </div>
-          <div class="grid grid-cols-5 items-end justify-between py-4 lg:grid-cols-5 ">
-            <span class="col-span-3 lg:col-span-1">
-              <span class="mr-4 text-sm	font-medium	 text-gray-500">5</span>
-              <span class="text-sm font-medium	text-gray-800	">
-                Omobolarinwa Jagun
-              </span>
-            </span>
-
-            <span class=" hidden	text-sm	font-medium text-gray-500 lg:block">
-              omobolarinwa@legum.tech
-            </span>
-            <span class="hidden text-sm font-medium	text-gray-500	 lg:block">
-              (+234) 817 582 5515
-            </span>
-            <span class=" hidden	text-sm	font-medium text-gray-500 lg:block">
-              Surulere, Lagos, Nigeria
-            </span>
-            <span class="col-span-2 flex justify-around lg:col-span-1">
-              <span class=" text-left text-sm	font-medium	 text-gray-500">
-                355
-              </span>
-              <span class=" text-left	text-sm font-medium	 text-gray-500">
-                055
-              </span>
-            </span>
-          </div>
-          <div class="grid grid-cols-5 items-end justify-between py-4 lg:grid-cols-5 ">
-            <span class="col-span-3 lg:col-span-1">
-              <span class="mr-4 text-sm	font-medium	 text-gray-500">5</span>
-              <span class="text-sm font-medium	text-gray-800	">
-                Omobolarinwa Jagun
-              </span>
-            </span>
-
-            <span class=" hidden	text-sm	font-medium text-gray-500 lg:block">
-              omobolarinwa@legum.tech
-            </span>
-            <span class="hidden text-sm font-medium	text-gray-500	 lg:block">
-              (+234) 817 582 5515
-            </span>
-            <span class=" hidden	text-sm	font-medium text-gray-500 lg:block">
-              Surulere, Lagos, Nigeria
-            </span>
-            <span class="col-span-2 flex justify-around lg:col-span-1">
-              <span class=" text-left text-sm	font-medium	 text-gray-500">
-                355
-              </span>
-              <span class=" text-left	text-sm font-medium	 text-gray-500">
-                055
-              </span>
-            </span>
-          </div>
-          <div class="grid grid-cols-5 items-end justify-between py-4 lg:grid-cols-5 ">
-            <span class="col-span-3 lg:col-span-1">
-              <span class="mr-4 text-sm	font-medium	 text-gray-500">5</span>
-              <span class="text-sm font-medium	text-gray-800	">
-                Omobolarinwa Jagun
-              </span>
-            </span>
-
-            <span class=" hidden	text-sm	font-medium text-gray-500 lg:block">
-              omobolarinwa@legum.tech
-            </span>
-            <span class="hidden text-sm font-medium	text-gray-500	 lg:block">
-              (+234) 817 582 5515
-            </span>
-            <span class=" hidden	text-sm	font-medium text-gray-500 lg:block">
-              Surulere, Lagos, Nigeria
-            </span>
-            <span class="col-span-2 flex justify-around lg:col-span-1">
-              <span class=" text-left text-sm	font-medium	 text-gray-500">
-                355
-              </span>
-              <span class=" text-left	text-sm font-medium	 text-gray-500">
-                055
-              </span>
-            </span>
-          </div>
+                <span class=" mr-4 hidden overflow-hidden	text-sm	font-medium text-gray-500 lg:block">
+                  {user.email}{" "}
+                </span>
+                <span class="hidden text-sm font-medium	text-gray-500	 lg:block">
+                  {user.phone_number}{" "}
+                </span>
+                <span class=" hidden	text-sm	font-medium text-gray-500 lg:block">
+                  {user.city} {user.state}
+                </span>
+                <span class="col-span-2 flex justify-around lg:col-span-1">
+                  <span class=" text-left text-sm	font-medium	 text-gray-500">
+                    {" "}
+                    {user.question_count}
+                  </span>
+                  <span class=" text-left	text-sm font-medium	 text-gray-500">
+                    {user.appointmentCount}
+                  </span>
+                </span>
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>

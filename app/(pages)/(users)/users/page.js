@@ -3,6 +3,16 @@ import BarChart from "@/app/components/bar";
 import PopularLocations from "@/app/components/popularLocations";
 import messageIcon from "@/public/messageIcon.svg";
 import PreviewOfIndividuals from "@/app/components/PreviewOfUsersOrLawyers";
+import { analyticsData } from "@/app/layout";
+const newUser = analyticsData["user-stats/new-users"];
+console.log(newUser);
+const totalAmount = analyticsData["user-stats/total-amount"];
+console.log(totalAmount);
+const activeUsers = analyticsData["user-stats/active-users"];
+const totalUsers = analyticsData["user-stats/users"];
+const userAppointment = analyticsData["user-stats/user-appointment"];
+const locationStat = analyticsData["user-stats/location-stats"];
+console.log(userAppointment);
 export default function Individuals() {
   // data for bar chart
   const data = [
@@ -24,34 +34,37 @@ export default function Individuals() {
       <div class=" grid w-full grid-cols-2 justify-evenly gap-4 lg:grid-cols-4">
         <TopCard
           title={"Total individual users"}
-          value={"45,823"}
+          value={totalUsers.totalUsers}
           icon={messageIcon}
-          increase={"23%"}
+          increase={totalUsers.percentageChange}
         />
         <TopCard
           title={"Active individual users"}
-          value={"45,823"}
+          value={activeUsers.totalActiveUsers}
           icon={messageIcon}
-          increase={"23%"}
+          increase={activeUsers.percentageChange}
         />
         <TopCard
           title={"New users"}
-          value={"45,823"}
+          value={newUser.usersCreatedThisMonth}
           icon={messageIcon}
-          increase={"23%"}
+          increase={newUser.percentageChange}
         />
         <TopCard
           title={"Total spent"}
-          value={"₦45,823"}
+          value={totalAmount.thisMonth}
           icon={messageIcon}
-          increase={"23%"}
+          increase={totalAmount.percentageChange}
         />
       </div>
       <div class="mt-6 grid grid-cols-1 gap-y-6 lg:grid-cols-3 lg:gap-6">
         <BarChart title={"Overview"} data={data} class="lg:col-span-2" />
-        <PopularLocations />
+        <PopularLocations locationStat={locationStat} />
       </div>
-      <PreviewOfIndividuals person={"users"} />
+      <PreviewOfIndividuals
+        userAppointment={userAppointment}
+        person={"users"}
+      />
     </div>
   );
 }
