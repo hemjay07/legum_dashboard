@@ -1,5 +1,4 @@
-export default function Input({ label, placeholder, type, id, width }) {
-  console.log("width", width);
+export default function Input({ label, placeholder, type, id, width, value }) {
   // if there is no`width` prop, the default value is `w-full`
 
   width = width ? `w-[${width}px]` : "w-full";
@@ -14,6 +13,8 @@ export default function Input({ label, placeholder, type, id, width }) {
         class={`mb-6 ${width} rounded border-none p-3 text-base font-normal text-black placeholder-gray-500 ring-2 ring-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-500`}
         type={type}
         id={id}
+        value={value}
+        readOnly
       />
     </div>
   );

@@ -26,7 +26,8 @@ export default function PagesLayout({ children }) {
           <Image
             src={companyLogo}
             alt="Company Logo"
-            class="h-auto w-6 bg-white"
+            class="h-6 w-6 bg-white"
+            styles={{ width: "auto", height: "auto" }}
           />
           <h1 class=" mr-8 whitespace-nowrap text-xl	font-medium text-white">
             Legum Limited
@@ -108,7 +109,7 @@ export default function PagesLayout({ children }) {
                   type="text"
                   name="search"
                   placeholder="Search for anything"
-                  autocomplete="off"
+                  autoComplete="off"
                   aria-label="Search for anything"
                   class=" w-full  rounded border-none py-2 pl-10 pr-3  text-sm font-normal text-black placeholder-gray-500 ring-2 ring-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-500"
                 />

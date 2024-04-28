@@ -5,14 +5,10 @@ import messageIcon from "@/public/messageIcon.svg";
 import PreviewOfIndividuals from "@/app/components/PreviewOfUsersOrLawyers";
 import { analyticsData } from "@/app/layout";
 const newUser = analyticsData["user-stats/new-users"];
-console.log(newUser);
 const totalAmount = analyticsData["user-stats/total-amount"];
-console.log(totalAmount);
 const activeUsers = analyticsData["user-stats/active-users"];
 const totalUsers = analyticsData["user-stats/users"];
-const userAppointment = analyticsData["user-stats/user-appointment"];
-const locationStat = analyticsData["user-stats/location-stats"];
-console.log(userAppointment);
+
 export default function Individuals() {
   // data for bar chart
   const data = [
@@ -59,12 +55,9 @@ export default function Individuals() {
       </div>
       <div class="mt-6 grid grid-cols-1 gap-y-6 lg:grid-cols-3 lg:gap-6">
         <BarChart title={"Overview"} data={data} class="lg:col-span-2" />
-        <PopularLocations locationStat={locationStat} />
+        <PopularLocations />
       </div>
-      <PreviewOfIndividuals
-        userAppointment={userAppointment}
-        person={"users"}
-      />
+      <PreviewOfIndividuals person={"users"} />
     </div>
   );
 }
