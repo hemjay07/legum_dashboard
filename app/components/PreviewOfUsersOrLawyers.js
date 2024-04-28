@@ -1,6 +1,9 @@
 import Link from "next/link";
 
-export default function PreviewOfIndividuals({ person, userAppointment }) {
+import { analyticsData } from "@/app/layout";
+
+export default function PreviewOfIndividuals({ person }) {
+  const userAppointment = analyticsData["user-stats/user-appointment"];
   return (
     <div class="min-h-full  py-6">
       <div class="relative mt-6  w-full rounded-lg border bg-white p-4 shadow-md ">

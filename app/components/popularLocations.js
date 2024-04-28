@@ -1,4 +1,8 @@
-export default function PopularLocations({ locationStat }) {
+import { analyticsData } from "@/app/layout";
+
+export default function PopularLocations() {
+  const locationStat = analyticsData["user-stats/location-stats"];
+
   return (
     <div class="relative h-[380px] w-full overflow-y-auto rounded-lg border bg-white p-4 shadow-md ">
       <div class="mb-4 flex items-center justify-between">
