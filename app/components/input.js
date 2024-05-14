@@ -1,4 +1,13 @@
-export default function Input({ label, placeholder, type, id, width, value }) {
+export default function Input({
+  label,
+  placeholder,
+  type,
+  id,
+  width,
+  value,
+  onChange,
+  readOnly,
+}) {
   // if there is no`width` prop, the default value is `w-full`
 
   width = width ? `w-[${width}px]` : "w-full";
@@ -14,7 +23,8 @@ export default function Input({ label, placeholder, type, id, width, value }) {
         type={type}
         id={id}
         value={value}
-        readOnly
+        readOnly={readOnly}
+        onChange={onChange}
       />
     </div>
   );

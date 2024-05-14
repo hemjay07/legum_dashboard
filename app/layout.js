@@ -13,8 +13,7 @@ async function prefetchData() {
 
     // Add more endpoint URLs as needed
   ];
-  const authToken =
-    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlkcmdyZWhoamRqOW85QGdtYWlsLmNvbSIsInVzZXJfdHlwZSI6ImFkbWluIiwicGhvbmVfbnVtYmVyIjoiMDk3OTM0NDY3ODkiLCJ1c2VyIjoiNjVjYjZlOTZhODE4OGFlYWQyNjY3M2FiIiwiaXNfcmVmcmVzaF90b2tlbiI6ZmFsc2UsImV4cCI6MTcwODU0MzQ5MCwiaWF0IjoxNzA3OTM4NjkwfQ.f7EZP1MS62TR7GXDN-zRi5jZiEbQXxY6owj0-L6RGj4";
+  const authToken = process.env.AUTH_TOKEN;
 
   const analyticsData = {};
 
